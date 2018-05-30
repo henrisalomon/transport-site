@@ -1,0 +1,100 @@
+<section id="guide">
+<markdown>
+# Guide de publication des données statiques
+
+Cette page présente toutes les informations utiles à l’ouverture et à la mise en qualité des données statiques décrivant votre réseau de transports publics, première brique du Point d’Accès National.
+
+Quatre étapes pour publier le bon jeu de données sur le Point d’Accès National :
+
+1. Générer un fichier au format GTFS décrivant les points d’arrêt, lignes, tracés, tarifs, accessibilité et horaires théoriques de votre réseau de transport public si ce n’est pas déjà fait ;
+2. Choisir entre les deux licences possibles pour ouvrir ce type de données ;
+3. Publier le fichier sur une plateforme de données ouvertes pouvant être référencée par le Point d’Accès National ;
+4. Identifier la personne qui pourra mettre à jour le fichier quand ce sera nécessaire et effectuer le suivi de qualité du jeu de données.
+
+## Générer le jeu de données
+
+Deux formats principaux existent pour décrire des réseaux de transports publics :
+
+* Le **[format NeTEx](http://netex-cen.eu/)** est la norme européenne facilitant l’interopérabilité des données entre États membres ;
+* Le **[format GTFS](https://developers.google.com/transit/gtfs/reference/)**, est le standard le plus utilisé par les services de mobilité d’information voyageur multimodale. Ce format, très simple, peut décrire les points d’arrêts, lignes, tracés, tarifs, accessibilité et horaires théoriques des réseaux de transports publics.
+
+Pour l’instant, **la plateforme transport.data.gouv.fr accepte des fichiers au format GTFS** : c’est le format qui permettra aux usagers de l’offre de transport public de votre territoire de bénéficier de services de mobilité innovants au plus vite.
+
+À moyen-terme, **la plateforme transport.data.gouv.fr proposera des outils de conversion de fichiers GTFS vers la norme NeTEx** afin de vous aider à vous conformer à la règlementation.
+
+Le fichier GTFS peut être généré par le système d’aide à l’exploitation.
+
+
+## Licence
+
+Par le décret [n° 2017-638](https://www.legifrance.gouv.fr/eli/decret/2017/4/27/2017-638/jo/texte), seules deux licences sont valables pour publier les données :
+
+* [Licence Ouverte](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf) dite Etalab
+* [ODbL](https://opendatacommons.org/licenses/odbl/summary/)
+
+La Licence Ouverte permet la rediffusion en ODbL. Ainsi, toutes les données sur <transport.data.gouv.fr> sont diffusées sous la licence ODbL.
+
+Elle permet la création de nouveaux services, mais oblige à publier toute modification et extension du jeu de données afin de faire profiter tout le monde des améliorations.
+Afin d’expliciter la licence les conditions particulières d’utilisation sont ajoutées :
+
+    Il est précisé que la clause de partage à l’identique figurant à l’article 4.4 concerne les informations de même nature, de même granularité, de même conditions temporelles et de même emprise géographique.
+
+## Qualité des données
+
+Il est crucial de mettre en qualité votre jeu de données au format GTFS pour en faciliter la réutilisation et assurer une information voyageur fiable aux usagers de votre réseau de transports publics.
+
+Transport.data.gouv.fr vous outille pour accélérer la mise en qualité de vos jeux de données.
+
+* Par des outils de validation exhibant les potentielles erreurs des fichiers publiés ;
+* Par un module de discussion ouvert qui permet aux réutilisateurs de communiquer directement avec les producteurs pour signaler de possibles améliorations ;
+* Par une harmonisation juridique garantissant aux producteurs de données le repartage par les réutilisateurs des jeux de données qu’ils auraient corrigés.
+
+Cependant : n’attendez pas d’avoir un jeu de données parfait avant de le publier de manière ouverte sur transport.data.gouv.fr. La communauté est là pour vous accompagner dans sa mise en qualité.
+
+## Point de contact technique
+
+Il est très essentiel que pour chaque jeu de données publié, un point de contact soit clairement identifié. Cette personne devra :
+
+* Répondre aux questions techniques sur les données et le réseau ;
+* S’assurer de l’amélioration au fil de l’eau de la qualité.
+
+## Création d’un compte et d’une fiche sur data.gouv.fr
+
+Le stockage ou le référencement des données se fait au travers de <data.gouv.fr>.
+
+Chaque AOM doit créer une organisation ou utiliser l’existante. Éventuellement, l’organisation peut être le transporteur s’ils porte le projet.
+Pour un explication pas à pas, le SGAR Occitanie a publié un [guide détaillé](http://www.opendatalab.fr/images/doc/Tuto_chargement_donnees_Opendata_v2.pdf).
+
+Plus spécifiquement lié à transport.data.gouv.fr, soyez attentif à :
+
+* Licence : uniquement ODbL ou Licence Ouverte
+* Contact : quelqu’un pouvant répondre aux questions, pas de boite générique
+* Tags : ajouter le tag GTFS
+
+## Hébergement ou moissonnage
+
+Si vous possédez votre propre plateforme de données (que ce soit à l’échelle de l’agglomération, du département ou de la région), continuez à utiliser cette plateforme. Configurez la fiche sur data.gouv.fr pour moissonner les données depuis votre plateforme.
+Si plusieurs plateformes couvrent votre territoir, utilisez celle au plus près de l’AOM.
+
+Si vous n’avez pas de plateforme, les données peuvent être stockée directement — et sans couts — sur <data.gouv.fr>.
+
+## Utilisation en interne des données publiées
+
+Afin de s’assurer d’une montée progressive de la qualité de données, nous encourageons très fortement à utiliser en interne les jeux de données publiés et ne pas avoir des données différenciées.
+Cela nuirait à la qualité des services rendus, ne permet pas de capitaliser sur les retours des ré-utilisateurs et créerait des informations contradictoires pour l’utilisateur final des réseaux de transport.
+
+## Exemples d’obligations de la licence ODbL
+
+Prennons l’exemple d’une autorité organisatrice publie les données GTFS décrivant les réseaux de transports publics  réguliers de personnes de son territoire sur le Point d’Accès National.
+
+En tant que réutilisateur du fichier, dans quels cas faut-il republier la base dérivée du GTFS ?
+
+|Républication exigée                              |Républication non exigée                          |Justification                      |
+|--------------------------------------------------|--------------------------------------------------|-----------------------------------|
+|Corrections des coordonnées et des noms des arrêts|Présence de commerces à proximité des arrêts      |Nature de la donnée                |
+|Ajustement des temps de correspondance            |Cheminement piéton des correspondances            |Granularité de la donnée           |
+|Corrections des horaires théoriques planifiés     |Passage en temps réel du prochain bus             |Conditions temporelles de la donnée|
+|GTFS dérivé avec la navette privée vers l’aéroport|GTFS dérivé avec les horaires du réseau frontalier|Emprise géographique de la donnée  |
+
+</section>
+</markdown>

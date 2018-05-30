@@ -20,4 +20,8 @@ defmodule TransportWeb.PageController do
   def search_organizations(conn, _params) do
     render(conn, "search_organizations.html")
   end
+
+  def guide(conn, _params) do
+    render(conn, "guide.html")
+  end
 end
