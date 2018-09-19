@@ -5,6 +5,14 @@ defmodule TransportWeb.DatasetController do
   alias Transport.Datagouvfr.Client.{Organizations, Datasets, Resources}
   require Logger
 
+
+  def index(%Plug.Conn{} = conn, %{"q" => q} = _params) do
+    conn
+    |> assign(:datasets, ReusableData.search_datasets(q))
+    |> render("index.html")
+  end
+
+
   def index(%Plug.Conn{} = conn, _params) do
     conn
     |> assign(:datasets, ReusableData.list_datasets)
