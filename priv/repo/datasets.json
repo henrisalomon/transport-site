@@ -261,4 +261,10 @@
     "commune_principale": 90010,
     "region": "Bourgogne-Franche-Comté",
     "id": "5b11435b88ee387a7f45434c"
+},{
+    "spatial": "Communauté d'Agglomération du Bassin d'Arcachon Sud",
+    "coordinates": [-1.11, 44.5861],
+    "commune_principale": 33009,
+    "region": "Nouvelle-Aquitaine",
+    "id": "5bb335e08b4c4132def7e755"
 }]
