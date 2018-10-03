@@ -261,4 +261,10 @@
     "commune_principale": 90010,
     "region": "Bourgogne-Franche-Comté",
     "id": "5b11435b88ee387a7f45434c"
+  },{
+    "spatial": "Communauté Urbaine du Grand Reims",
+    "coordinates": [4.0656, 49.2384],
+    "commune_principale": 51454,
+    "region": "Grand-Est",
+    "id": "5bb493b18b4c417d7f3f6b05"
 }]
